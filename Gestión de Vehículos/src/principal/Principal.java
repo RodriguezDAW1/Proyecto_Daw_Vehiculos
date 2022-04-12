@@ -46,6 +46,8 @@ public class Principal {
 				break;
 			default: //Resto opciones.
 				System.out.println("La opción introducida no es válida.");
+			}
 		}while(opcion!=5);
+		teclado.close();
 	}
 }
