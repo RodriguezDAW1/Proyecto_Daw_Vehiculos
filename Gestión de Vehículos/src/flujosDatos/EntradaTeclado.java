@@ -22,7 +22,7 @@ public class EntradaTeclado {
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
      * @return Devuelve el número entero introducido como respuesta.
      */
-    public static int leerEntero(String mensaje) {
+    public int leerEntero(String mensaje) {
         boolean valido;
         int num = 0;
 
@@ -47,7 +47,7 @@ public class EntradaTeclado {
      * @param mensaje Cadena que representa el tipo de dato a validar.
      * @return Devuelve true si la el número es válido y false en caso contrario.
      */
-    public static boolean validaEntero(int num, String mensaje) {
+    public boolean validaEntero(int num, String mensaje) {
         boolean valido = true;
         //Tipo de entero a verificar.
         //if (mensaje.equals("")) {
@@ -61,7 +61,7 @@ public class EntradaTeclado {
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
      * @return Devuelve el número real introducido como respuesta.
      */
-    public static double leerReal(String mensaje) {
+    public double leerReal(String mensaje) {
         boolean valido;
         double num = 0;
 
@@ -86,7 +86,7 @@ public class EntradaTeclado {
      * @param mensaje Cadena que representa el tipo de dato a validar.
      * @return Devuelve true si el dato es válido y false en caso contrario.
      */
-    public static boolean validaReal(double num, String mensaje) {
+    public boolean validaReal(double num, String mensaje) {
         boolean valido = true;
         //Tipo de real a verificar.
         //if (mensaje.equals("")) {
@@ -100,7 +100,7 @@ public class EntradaTeclado {
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
      * @return Devuelve la cadena leída.
      */
-    public static String leerCadena(String mensaje) {
+    public String leerCadena(String mensaje) {
         String cad;
         do {
             System.out.print(mensaje);
@@ -116,7 +116,7 @@ public class EntradaTeclado {
      * @param mensaje Cadena que representa el tipo de dato a validar.
      * @return Devuelve true si la cadena es válida y false en caso contrario.
      */
-    public static boolean validaCadena(String cad, String mensaje) {
+    public boolean validaCadena(String cad, String mensaje) {
         boolean valido = true;
         //Si la cadena está vacía o solamente contiene espacios.
         if (cad.isBlank()) {
@@ -129,5 +129,12 @@ public class EntradaTeclado {
             //}
         }
         return valido;
+    }
+    
+    /**
+     * Método que cierra el flujo del Scanner.
+     */
+    public void cerrarFlujo() {
+    	teclado.close();
     }
 }
