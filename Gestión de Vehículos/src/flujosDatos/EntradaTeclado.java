@@ -23,7 +23,6 @@ public class EntradaTeclado {
      * @return Devuelve el número entero introducido como respuesta.
      */
     public static int leerEntero(String mensaje) {
-        Scanner teclado = new Scanner(System.in);
         boolean valido;
         int num = 0;
 
@@ -63,7 +62,6 @@ public class EntradaTeclado {
      * @return Devuelve el número real introducido como respuesta.
      */
     public static double leerReal(String mensaje) {
-        Scanner teclado = new Scanner(System.in);
         boolean valido;
         double num = 0;
 
@@ -105,7 +103,6 @@ public class EntradaTeclado {
     public static String leerCadena(String mensaje) {
         String cad;
         do {
-            Scanner teclado = new Scanner(System.in, "ISO-8859-1");
             System.out.print(mensaje);
             cad = teclado.nextLine().trim();
         } while (!validaCadena(cad, mensaje));
