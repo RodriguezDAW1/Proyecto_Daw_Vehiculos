@@ -2,7 +2,7 @@ package principal;
 
 /**
  * Clase que contiene el método main de inicio de la aplicación.
- * @author José A. Rodríguez López.
+ * @author Salama Hassani
  * @version 1.0
  */
 public class Principal {
