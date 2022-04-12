@@ -2,7 +2,7 @@ package vehiculos;
 
 /**
  * Clase abstracta que describe los vehiculos.
- * @author José A. Rodríguez López
+ * @author salama hassani
  * @version 1.0
  */
 public abstract class Vehiculos {
