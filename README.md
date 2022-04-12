@@ -1,7 +1,7 @@
 # Proyecto_Daw_Vehiculos
 Creación de una aplicación en un repositorio remoto para la asignatura de Entornos de Desarrollo.
 
-APLICACIÓN GESTION VEHÍCULOS
+APLICACIÓN GESTIÓN VEHÍCULOS
 
 Es muy aconsejable hacer el diseño UML antes de empezar a programar.
 
