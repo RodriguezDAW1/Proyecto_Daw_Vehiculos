@@ -17,7 +17,7 @@ public class EntradaTeclado {
 	}
     
 	/**
-     * Función que solicita un número entero y verifica que el dato es válido.
+     * Método que solicita un número entero y verifica que el dato es válido.
      *
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
      * @return Devuelve el número entero introducido como respuesta.
@@ -41,7 +41,7 @@ public class EntradaTeclado {
     }
 
     /**
-     * Función que comprueba que el número entero sea válido.
+     * Método que comprueba que el número entero sea válido.
      *
      * @param num Número entero a validar.
      * @param mensaje Cadena que representa el tipo de dato a validar.
@@ -56,7 +56,7 @@ public class EntradaTeclado {
     }
 
     /**
-     * Función que solicita un número real y verifica que el dato es válido.
+     * Método que solicita un número real y verifica que el dato es válido.
      *
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
      * @return Devuelve el número real introducido como respuesta.
@@ -80,7 +80,7 @@ public class EntradaTeclado {
     }
 
     /**
-     * Función que comprueba que un número real sea válido dependiendo del tipo de dato.
+     * Método que comprueba que un número real sea válido dependiendo del tipo de dato.
      *
      * @param num Número real a validar.
      * @param mensaje Cadena que representa el tipo de dato a validar.
