@@ -1,4 +1,4 @@
-package ejerciciosPOO2.ejercicio6;
+package vehiculos;
 
 /**
  * Clase Acuaticos.
@@ -9,9 +9,9 @@ public class Acuaticos extends Vehiculos {
     
     /**
      * onstructor.
-     * @param matricula Matricula del vehi­culo.
-     * @param modelo Modelo del vehi­culo.
-     * @param eslora Eslora del vehi­culo Acuatico.
+     * @param matricula Matricula del vehículo.
+     * @param modelo Modelo del vehículo.
+     * @param eslora Eslora del vehículo Acuatico.
      */
     public Acuaticos(String matricula, String modelo, int eslora){
         super(matricula,modelo);
