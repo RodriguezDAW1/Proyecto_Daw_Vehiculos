@@ -5,13 +5,13 @@ package vehiculos;
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
-    private final int eslora;   //Eslora del Vehiculo acuaticos.
+    private final int eslora;   //Eslora del Vehículo acuático.
     
     /**
-     * onstructor.
-     * @param matricula Matricula del veh�culo.
-     * @param modelo Modelo del veh�culo.
-     * @param eslora Eslora del veh�culo Acuatico.
+     * Constructor Acuaticos.
+     * @param matricula Matrícula del vehículo.
+     * @param modelo Modelo del vehículo.
+     * @param eslora Eslora del vehículo Acuático.
      */
     public Acuaticos(String matricula, String modelo, int eslora){
         super(matricula,modelo);
@@ -19,15 +19,15 @@ public class Acuaticos extends Vehiculos {
     }
 
     /**
-     * Metodo que devuelve la eslora del Acuatico acuatico.
-     * @return La eslora del vehiculo acuatico.
+     * Método que devuelve la eslora del vehículo acuático.
+     * @return La eslora del vehículo acuatico.
      */
     public int getEslora() {
         return eslora;
     }
     
     /**
-     * Metodo que imprime un vehiculo acuaticoo.
+     * Metodo que imprime un vehículo acuático.
      */
     @Override
     protected void imprimir(){
@@ -36,13 +36,13 @@ public class Acuaticos extends Vehiculos {
     }
     
     /**
-     * Metodo que comprueba que la matri�cula de los vehi�culos acuaticos esta� formada por entre 3 y 
+     * Metodo que comprueba que la matrícula de los vehículos acuáticos está formada por entre 3 y 
      * 10 letras.
-     * @return Devuelve true si la matri�cula se ajusta al patron y false en caso contrario.
+     * @return Devuelve true si la matrícula se ajusta al patrón y false en caso contrario.
      */
     @Override
     public boolean comprobarMatricula() {
-        //Transforma la matri�cula a mayusculas.
+        //Transforma la matrícula a mayúsculas.
         String matricula=this.getMatricula();
         return matricula.matches("^[A-Z]{3,10}$");
     }

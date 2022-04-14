@@ -3,15 +3,15 @@ package vehiculos;
 import java.util.ArrayList;
 
 /**
- * Clase que representa a todo el conjunto de vehículos.
- * @author José A. Rodríguez López.
+ * Clase que representa a todo el conjunto de vehÃ­culos.
+ * @author JosÃ© A. RodrÃ­guez LÃ³pez.
  * @version 1.0
  */
 public class ListadoVehiculos {
-	private ArrayList<Vehiculos> listadoVehiculos=null;	//Conjunto de vehículos.
+	private ArrayList<Vehiculos> listadoVehiculos=null;	//Conjunto de vehÃ­culos.
 	
 	/**
-	 * Cóntructor ListadoVehiculos.
+	 * Constructor ListadoVehiculos.
 	 */
 	public ListadoVehiculos() {
 		listadoVehiculos=new ArrayList<>();

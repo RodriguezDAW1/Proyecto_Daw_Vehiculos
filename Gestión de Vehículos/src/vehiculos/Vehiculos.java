@@ -1,18 +1,18 @@
 package vehiculos;
 
 /**
- * Clase abstracta que describe los vehiculos.
+ * Clase abstracta que describe los vehÃ­culos.
  * @author Salama Hassani
  * @version 1.0
  */
 public abstract class Vehiculos {
-    private final String matricula; //Matrícula del vehículo.
-    private final String modelo;    //Modelo del vehículo.
+    private final String matricula; //MatrÃ­cula del vehÃ­culo.
+    private final String modelo;    //Modelo del vehÃ­culo.
     
     /**
-     * Método constructor.
-     * @param matricula Matrícula del vehículo.
-     * @param modelo Modelo del vehículo.
+     * MÃ©todo constructor.
+     * @param matricula MatrÃ­cula del vehÃ­culo.
+     * @param modelo Modelo del vehÃ­culo.
      */
     public Vehiculos(String matricula, String modelo){
         this.matricula=matricula.toUpperCase();
@@ -20,32 +20,32 @@ public abstract class Vehiculos {
     }
     
     /**
-     * Método que devuelve la matrícula del vehículo.
-     * @return La matrícula del vehículo. 
+     * MÃ©todo que devuelve la matrÃ­cula del vehÃ­culo.
+     * @return La matrÃ­cula del vehÃ­culo. 
      */
     public String getMatricula() {
         return matricula;
     }
 
     /**
-     * Método que devuelve el modelo del vehículo.
-     * @return El modelo del vehículo.
+     * MÃ©todo que devuelve el modelo del vehÃ­culo.
+     * @return El modelo del vehÃ­culo.
      */
     public String getModelo() {
         return modelo;
     }
     
     /**
-     * Método abstracto que comprueba si la matrícula se ajusta al patrón según el tipo de vehículo.
-     * @return Devuelve true si la matrícula se ajusta al patrón según el tipo de vehículo o false 
+     * MÃ©todo abstracto que comprueba si la matrÃ­cula se ajusta al patrÃ³n segÃºn el tipo de vehÃ­culo.
+     * @return Devuelve true si la matrÃ­cula se ajusta al patrÃ³n segÃºn el tipo de vehÃ­culo o false 
      * en caso contrario.
      */
     public abstract boolean comprobarMatricula();
     
     /**
-     * Método que imprime un vehículo.
+     * MÃ©todo que imprime un vehÃ­culo.
      */
     protected void imprimir(){
-        System.out.print("Matricula: "+this.matricula+"   Modelo: "+this.modelo);
+        System.out.print("MatrÃ­cula: "+this.matricula+"   Modelo: "+this.modelo);
     }
 }

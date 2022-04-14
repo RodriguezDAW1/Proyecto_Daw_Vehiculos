@@ -1,4 +1,4 @@
 /**
- * Contiene la clase de inicio de la aplicación de gestión de vehículos.
+ * Contiene la clase de inicio de la aplicaciÃ³n de gestiÃ³n de vehÃ­culos.
  */
 package principal;

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Clase para gestionar y validar la entrada de datos por teclado.
- * @author José A. Rodríguez López
+ * @author JosÃ© A. RodrÃ­guez LÃ³pez
  */
 public class EntradaTeclado {
 	private static Scanner teclado;	//Objeto de la clase Scanner.
@@ -17,10 +17,10 @@ public class EntradaTeclado {
 	}
     
 	/**
-     * Método que solicita un número entero y verifica que el dato es válido.
+     * MÃ©todo que solicita un nÃºmero entero y verifica que el dato es vÃ¡lido.
      *
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
-     * @return Devuelve el número entero introducido como respuesta.
+     * @return Devuelve el nÃºmero entero introducido como respuesta.
      */
     public int leerEntero(String mensaje) {
         boolean valido;
@@ -33,7 +33,7 @@ public class EntradaTeclado {
                 //Validar entero
                 valido = validaEntero(num, mensaje);
             } catch (NumberFormatException e) {
-                System.out.println("El dato introducido no se puede convertir a un número entero.");
+                System.out.println("El dato introducido no se puede convertir a un nÃºmero entero.");
                 valido = false;
             }
         } while (!valido);
@@ -41,11 +41,11 @@ public class EntradaTeclado {
     }
 
     /**
-     * Método que comprueba que el número entero sea válido.
+     * MÃ©todo que comprueba que el nÃºmero entero sea vÃ¡lido.
      *
-     * @param num Número entero a validar.
+     * @param num NÃºmero entero a validar.
      * @param mensaje Cadena que representa el tipo de dato a validar.
-     * @return Devuelve true si la el número es válido y false en caso contrario.
+     * @return Devuelve true si el nÃºmero es vÃ¡lido y false en caso contrario.
      */
     public boolean validaEntero(int num, String mensaje) {
         boolean valido = true;
@@ -56,10 +56,10 @@ public class EntradaTeclado {
     }
 
     /**
-     * Método que solicita un número real y verifica que el dato es válido.
+     * MÃ©todo que solicita un nÃºmero real y verifica que el dato es vÃ¡lido.
      *
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
-     * @return Devuelve el número real introducido como respuesta.
+     * @return Devuelve el nÃºmero real introducido como respuesta.
      */
     public double leerReal(String mensaje) {
         boolean valido;
@@ -72,7 +72,7 @@ public class EntradaTeclado {
                 //Validar real.
                 valido = validaReal(num, mensaje);
             } catch (NumberFormatException e) {
-                System.out.println("El dato introducido no se puede convertir a un número real.");
+                System.out.println("El dato introducido no se puede convertir a un nÃºmero real.");
                 valido = false;
             }
         } while (!valido);
@@ -80,11 +80,11 @@ public class EntradaTeclado {
     }
 
     /**
-     * Método que comprueba que un número real sea válido dependiendo del tipo de dato.
+     * MÃ©todo que comprueba que un nÃºmero real sea vÃ¡lido dependiendo del tipo de dato.
      *
-     * @param num Número real a validar.
+     * @param num NÃºmero real a validar.
      * @param mensaje Cadena que representa el tipo de dato a validar.
-     * @return Devuelve true si el dato es válido y false en caso contrario.
+     * @return Devuelve true si el dato es vÃ¡lido y false en caso contrario.
      */
     public boolean validaReal(double num, String mensaje) {
         boolean valido = true;
@@ -95,10 +95,10 @@ public class EntradaTeclado {
     }
 
     /**
-     * Método para leer una cadena de caracteres.
+     * MÃ©todo para leer una cadena de caracteres.
      *
      * @param mensaje Cadena de texto a mostrar al solicitar el dato.
-     * @return Devuelve la cadena leída.
+     * @return Devuelve la cadena leÃ­da.
      */
     public String leerCadena(String mensaje) {
         String cad;
@@ -110,17 +110,17 @@ public class EntradaTeclado {
     }
 
     /**
-     * Método que comprueba que una cadena de caracteres sea válida dependiendo del tipo de dato.
+     * MÃ©todo que comprueba que una cadena de caracteres sea vÃ¡lida dependiendo del tipo de dato.
      *
      * @param cad Cadena de caracteres a validar.
      * @param mensaje Cadena que representa el tipo de dato a validar.
-     * @return Devuelve true si la cadena es válida y false en caso contrario.
+     * @return Devuelve true si la cadena es vÃ¡lida y false en caso contrario.
      */
     public boolean validaCadena(String cad, String mensaje) {
         boolean valido = true;
-        //Si la cadena está vacía o solamente contiene espacios.
+        //Si la cadena estÃ¡ vacÃ­a o solamente contiene espacios.
         if (cad.isBlank()) {
-            System.out.println("La cadena está vacia o solo contiene espacios.");
+            System.out.println("La cadena estÃ¡ vacia o solo contiene espacios.");
             valido=false;
         } else {
             //Resto de validaciones.
@@ -132,7 +132,7 @@ public class EntradaTeclado {
     }
     
     /**
-     * Método que cierra el flujo del Scanner.
+     * MÃ©todo que cierra el flujo del Scanner.
      */
     public void cerrarFlujo() {
     	teclado.close();
