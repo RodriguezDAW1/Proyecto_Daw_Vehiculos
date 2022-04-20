@@ -1,4 +1,4 @@
-package Vehiculos;
+package vehiculos;
 
 /**
  * Clase Aereos.
