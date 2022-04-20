@@ -7,6 +7,7 @@ import vehiculos.ListadoVehiculos;
  * Clase que contiene el método main de inicio de la aplicación.
  * 
  * @author José A. Rodríguez López.
+ * @author Daniel López Tardajos.
  * @version 1.0
  */
 public class Principal {
