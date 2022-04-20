@@ -1,14 +1,14 @@
 package vehiculos;
 
 /**
- * Clase Acuaticos.
+ * Clase Acuáticos.
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
     private final int eslora;   //Eslora del Vehículo acuático.
     
     /**
-     * Constructor Acuaticos.
+     * Constructor Acuáticos.
      * @param matricula Matrícula del vehículo.
      * @param modelo Modelo del vehículo.
      * @param eslora Eslora del vehículo Acuático.
