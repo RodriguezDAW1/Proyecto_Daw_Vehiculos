@@ -5,13 +5,13 @@ package vehiculos;
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
-    private final int eslora;   //Eslora del Veh√≠culo acu√°tico.
+    private final int eslora;   //Eslora del VehÌculo acu·tico.
     
     /**
      * Constructor Acuaticos.
-     * @param matricula Matr√≠cula del veh√≠culo.
-     * @param modelo Modelo del veh√≠culo.
-     * @param eslora Eslora del veh√≠culo Acu√°tico.
+     * @param matricula MatrÌcula del vehÌculo.
+     * @param modelo Modelo del vehÌculo.
+     * @param eslora Eslora del vehÌculo Acu·tico.
      */
     public Acuaticos(String matricula, String modelo, int eslora){
         super(matricula,modelo);
@@ -19,15 +19,15 @@ public class Acuaticos extends Vehiculos {
     }
 
     /**
-     * M√©todo que devuelve la eslora del veh√≠culo acu√°tico.
-     * @return La eslora del veh√≠culo acuatico.
+     * M√©todo que devuelve la eslora del vehÌculo acu·tico.
+     * @return La eslora del vehÌculo acuatico.
      */
     public int getEslora() {
         return eslora;
     }
     
     /**
-     * Metodo que imprime un veh√≠culo acu√°tico.
+     * Metodo que imprime un vehÌculo acu·tico.
      */
     @Override
     protected void imprimir(){
@@ -36,13 +36,13 @@ public class Acuaticos extends Vehiculos {
     }
     
     /**
-     * Metodo que comprueba que la matr√≠cula de los veh√≠culos acu√°ticos est√° formada por entre 3 y 
+     * Metodo que comprueba que la matrÌcula de los vehÌculos acu·ticos est· formada por entre 3 y 
      * 10 letras.
-     * @return Devuelve true si la matr√≠cula se ajusta al patr√≥n y false en caso contrario.
+     * @return Devuelve true si la matrÌcula se ajusta al patrÛn y false en caso contrario.
      */
     @Override
     public boolean comprobarMatricula() {
-        //Transforma la matr√≠cula a may√∫sculas.
+        //Transforma la matrÌcula a may˙sculas.
         String matricula=this.getMatricula();
         return matricula.matches("^[A-Z]{3,10}$");
     }
