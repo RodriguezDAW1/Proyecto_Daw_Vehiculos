@@ -5,10 +5,10 @@ package vehiculos;
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
-    private final int eslora;   //Eslora del Veh�culo acu�tico.
+    private final int eslora;   //Eslora del Vehiculo acu�tico.
     
     /**
-     * Constructor Acu�ticos.
+     * Constructor 
      * @param matricula Matr�cula del veh�culo.
      * @param modelo Modelo del veh�culo.
      * @param eslora Eslora del veh�culo Acu�tico.
