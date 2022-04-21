@@ -1,17 +1,17 @@
 package vehiculos;
 
 /**
- * Clase Acuáticos.
+ * Clase Acuaticos.
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
-    private final int eslora;   //Eslora del Vehículo acuático.
+    private final int eslora;   //Eslora del Vehï¿½culo acuï¿½tico.
     
     /**
-     * Constructor Acuáticos.
-     * @param matricula Matrícula del vehículo.
-     * @param modelo Modelo del vehículo.
-     * @param eslora Eslora del vehículo Acuático.
+     * Constructor Acuï¿½ticos.
+     * @param matricula Matrï¿½cula del vehï¿½culo.
+     * @param modelo Modelo del vehï¿½culo.
+     * @param eslora Eslora del vehï¿½culo Acuï¿½tico.
      */
     public Acuaticos(String matricula, String modelo, int eslora){
         super(matricula,modelo);
@@ -19,15 +19,15 @@ public class Acuaticos extends Vehiculos {
     }
 
     /**
-     * MÃ©todo que devuelve la eslora del vehículo acuático.
-     * @return La eslora del vehículo acuatico.
+     * MÃ©todo que devuelve la eslora del vehï¿½culo acuï¿½tico.
+     * @return La eslora del vehï¿½culo acuatico.
      */
     public int getEslora() {
         return eslora;
     }
     
     /**
-     * Metodo que imprime un vehículo acuático.
+     * Metodo que imprime un vehï¿½culo acuï¿½tico.
      */
     @Override
     protected void imprimir(){
@@ -36,13 +36,13 @@ public class Acuaticos extends Vehiculos {
     }
     
     /**
-     * Metodo que comprueba que la matrícula de los vehículos acuáticos está formada por entre 3 y 
+     * Metodo que comprueba que la matrï¿½cula de los vehï¿½culos acuï¿½ticos estï¿½ formada por entre 3 y 
      * 10 letras.
-     * @return Devuelve true si la matrícula se ajusta al patrón y false en caso contrario.
+     * @return Devuelve true si la matrï¿½cula se ajusta al patrï¿½n y false en caso contrario.
      */
     @Override
     public boolean comprobarMatricula() {
-        //Transforma la matrícula a mayúsculas.
+        //Transforma la matrï¿½cula a mayï¿½sculas.
         String matricula=this.getMatricula();
         return matricula.matches("^[A-Z]{3,10}$");
     }
