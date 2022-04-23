@@ -15,7 +15,7 @@ public class Acuaticos extends Vehiculos {
      */
     public Acuaticos(String matricula, String modelo, int eslora){
         super(matricula,modelo);
-        this.eslora=eslora;
+        this.eslora=0;
     }
 
     /**
