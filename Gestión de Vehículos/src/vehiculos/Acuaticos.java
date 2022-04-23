@@ -6,14 +6,14 @@ package vehiculos;
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
-	private final int eslora; // Eslora del Vehiculo acuaticos
+	private final int eslora; // Eslora del vehículo acuático.
 
 	/**
 	 * Constructor
 	 * 
-	 * @param matricula Matricula del veh�culo.
-	 * @param modelo    Modelo del veh�culo.
-	 * @param eslora    Eslora del veh�culo Acu�tico.
+	 * @param matricula Matrícula del vehículo.
+	 * @param modelo    Modelo del vehículo.
+	 * @param eslora    Eslora del vehículo acuático.
 	 */
 	public Acuaticos(String matricula, String modelo, int eslora) {
 		super(matricula, modelo);
@@ -21,16 +21,16 @@ public class Acuaticos extends Vehiculos {
 	}
 
 	/**
-	 * Método que devuelve la eslora del veh�culo acu�tico.
+	 * Método que devuelve la eslora del vehículo acuático.
 	 * 
-	 * @return La eslora del veh�culo acuatico.
+	 * @return La eslora del vehículo acuático.
 	 */
 	public int getEslora() {
 		return eslora;
 	}
 
 	/**
-	 * Metodo que imprime un veh�culo acu�tico.
+	 * Metodo que imprime un vehículo acuático.
 	 */
 	@Override
 	protected void imprimir() {
@@ -39,10 +39,10 @@ public class Acuaticos extends Vehiculos {
 	}
 
 	/**
-	 * Metodo que comprueba que la matr�cula de los veh�culos acu�ticos est� formada
+	 * Metodo que comprueba que la matrícula de los vehículos acuáticos está formada
 	 * por entre 3 y 10 letras.
 	 * 
-	 * @return Devuelve true si la matr�cula se ajusta al patr�n y false en caso
+	 * @return Devuelve true si la matrícula se ajusta al patrón y false en caso
 	 *         contrario.
 	 */
 	@Override
