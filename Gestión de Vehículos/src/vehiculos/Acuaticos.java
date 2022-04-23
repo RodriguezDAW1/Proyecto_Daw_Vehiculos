@@ -1,4 +1,4 @@
-package ejerciciosPOO2.ejercicio6;
+package vehiculos;
 
 /**
  * Clase Acuaticos.
@@ -9,9 +9,9 @@ public class Acuaticos extends Vehiculos {
     
     /**
      * onstructor.
-     * @param matricula Matricula del vehi­culo.
-     * @param modelo Modelo del vehi­culo.
-     * @param eslora Eslora del vehi­culo Acuatico.
+     * @param matricula Matricula del vehiï¿½culo.
+     * @param modelo Modelo del vehiï¿½culo.
+     * @param eslora Eslora del vehiï¿½culo Acuatico.
      */
     public Acuaticos(String matricula, String modelo, int eslora){
         super(matricula,modelo);
@@ -36,13 +36,13 @@ public class Acuaticos extends Vehiculos {
     }
     
     /**
-     * Metodo que comprueba que la matri­cula de los vehi­culos acuaticos esta¡ formada por entre 3 y 
+     * Metodo que comprueba que la matriï¿½cula de los vehiï¿½culos acuaticos estaï¿½ formada por entre 3 y 
      * 10 letras.
-     * @return Devuelve true si la matri­cula se ajusta al patron y false en caso contrario.
+     * @return Devuelve true si la matriï¿½cula se ajusta al patron y false en caso contrario.
      */
     @Override
     public boolean comprobarMatricula() {
-        //Transforma la matri­cula a mayusculas.
+        //Transforma la matriï¿½cula a mayusculas.
         String matricula=this.getMatricula();
         return matricula.matches("^[A-Z]{3,10}$");
     }
