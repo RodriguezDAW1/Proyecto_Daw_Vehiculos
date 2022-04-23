@@ -6,7 +6,7 @@ package vehiculos;
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
-	private final int esloa; // Eslora del vehículo acuático.
+	private final int eslora; // Eslora del vehículo acuático.
 
 	/**
 	 * Constructor
@@ -15,9 +15,9 @@ public class Acuaticos extends Vehiculos {
 	 * @param modelo    Modelo del vehículo.
 	 * @param eslora    Eslora del vehículo acuático.
 	 */
-	public Acuaticos(String matricula, String modelo, int esloraAcuatico) {
+	public Acuaticos(String matricula, String modelo, int eslora) {
 		super(matricula, modelo);
-		this.esloa = esloraAcuatico;
+		this.eslora = eslora;
 	}
 
 	/**
@@ -26,7 +26,7 @@ public class Acuaticos extends Vehiculos {
 	 * @return La eslora del vehículo acuático.
 	 */
 	public int getEslora() {
-		return esloa;
+		return eslora;
 	}
 
 	/**
@@ -35,7 +35,7 @@ public class Acuaticos extends Vehiculos {
 	@Override
 	protected void imprimir() {
 		super.imprimir();
-		System.out.print("   Eslora: " + this.esloa + "metros.");
+		System.out.print("   Eslora: " + this.eslora + "metros.");
 	}
 
 	/**
@@ -49,6 +49,6 @@ public class Acuaticos extends Vehiculos {
 	public boolean comprobarMatricula() {
 		// Transforma la matrícula a mayúsculas.
 		String matricula = this.getMatricula();
-		return matricula.matches("^[A-Z]{3,10}$");
+		return matricula.matches("^[A-Z]{310}$");
 	}
 }
