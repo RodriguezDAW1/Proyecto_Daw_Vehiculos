@@ -34,7 +34,8 @@ public class Acuaticos extends Vehiculos {
 	 */
 	@Override
 	protected void imprimir() {
-		System.out.print("   Eslora: " + this.eslora + "m.");
+		super.imprimir();
+		System.out.print("   Eslora: " + this.eslora + "metros.");
 	}
 
 	/**
