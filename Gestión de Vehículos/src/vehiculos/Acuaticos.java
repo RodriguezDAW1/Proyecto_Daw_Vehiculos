@@ -8,24 +8,17 @@ public class Acuaticos extends Vehiculos {
     private final int eslora;   //Eslora del Vehiculo acuaticos.
     
     /**
-     * onstructor.
-     * @param matricula Matricula del vehi�culo.
-     * @param modelo Modelo del vehi�culo.
-     * @param eslora Eslora del vehi�culo Acuatico.
+     * Constructor.
+     * @param matricula Matricula del vehiculo.
+     * @param modelo Modelo del vehiculo.
+     * @param eslora Eslora del vehiculo Acuatico.
      */
     public Acuaticos(String matricula, String modelo, int eslora){
         super(matricula,modelo);
         this.eslora=0;
     }
 
-    /**
-     * Metodo que devuelve la eslora del Acuatico acuatico.
-     * @return La eslora del vehiculo acuatico.
-     */
-    public int getEslora() {
-        return eslora;
-    }
-    
+     
     /**
      * Metodo que imprime un vehiculo acuaticoo.
      */
