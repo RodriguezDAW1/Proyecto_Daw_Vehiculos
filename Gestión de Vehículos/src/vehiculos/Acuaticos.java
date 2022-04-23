@@ -1,54 +1,49 @@
-package vehiculos;
+package ejerciciosPOO2.ejercicio6;
 
 /**
  * Clase Acuaticos.
- * 
  * @author Salama Hassani
  */
 public class Acuaticos extends Vehiculos {
-	private final int eslora; // Eslora del vehículo acuático.
+    private final int eslora;   //Eslora del Vehiculo acuaticos.
+    
+    /**
+     * onstructor.
+     * @param matricula Matricula del vehi�culo.
+     * @param modelo Modelo del vehi�culo.
+     * @param eslora Eslora del vehi�culo Acuatico.
+     */
+    public Acuaticos(String matricula, String modelo, int eslora){
+        super(matricula,modelo);
+        this.eslora=eslora;
+    }
 
-	/**
-	 * Constructor
-	 * 
-	 * @param matricula Matrícula del vehículo.
-	 * @param modelo    Modelo del vehículo.
-	 * @param eslora    Eslora del vehículo acuático.
-	 */
-	public Acuaticos(String matricula, String modelo, int eslora) {
-		super(matricula, modelo);
-		this.eslora = eslora;
-	}
-
-	/**
-	 * Método que devuelve la eslora del vehículo acuático.
-	 * 
-	 * @return La eslora del vehículo acuático.
-	 */
-	public int getEslora() {
-		return eslora;
-	}
-
-	/**
-	 * Metodo que imprime un vehículo acuático.
-	 */
-	@Override
-	protected void imprimir() {
-		super.imprimir();
-		System.out.print("   Eslora: " + this.eslora + "metros.");
-	}
-
-	/**
-	 * Metodo que comprueba que la matrícula de los vehículos acuáticos está formada
-	 * por entre 3 y 10 letras.
-	 * 
-	 * @return Devuelve true si la matrícula se ajusta al patrón y false en caso
-	 *         contrario.
-	 */
-	@Override
-	public boolean comprobarMatricula() {
-		// Transforma la matrícula a mayúsculas.
-		String matricula = this.getMatricula();
-		return matricula.matches("^[A-Z]{310}$");
-	}
+    /**
+     * Metodo que devuelve la eslora del Acuatico acuatico.
+     * @return La eslora del vehiculo acuatico.
+     */
+    public int getEslora() {
+        return eslora;
+    }
+    
+    /**
+     * Metodo que imprime un vehiculo acuaticoo.
+     */
+    @Override
+    protected void imprimir(){
+        super.imprimir();
+        System.out.print("   Eslora: "+this.eslora+"m.");
+    }
+    
+    /**
+     * Metodo que comprueba que la matri�cula de los vehi�culos acuaticos esta� formada por entre 3 y 
+     * 10 letras.
+     * @return Devuelve true si la matri�cula se ajusta al patron y false en caso contrario.
+     */
+    @Override
+    public boolean comprobarMatricula() {
+        //Transforma la matri�cula a mayusculas.
+        String matricula=this.getMatricula();
+        return matricula.matches("^[A-Z]{3,10}$");
+    }
 }

@@ -1,4 +1,4 @@
 /**
- * Contiene las clases que describen los diferentes tipos de vehÃ­culos.
+ * Contiene las clases que describen los diferentes tipos de vehículos.
  */
 package vehiculos;
