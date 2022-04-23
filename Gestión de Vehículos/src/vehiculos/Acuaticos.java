@@ -11,12 +11,12 @@ public class Acuaticos extends Vehiculos {
 	/**
 	 * Constructor
 	 * 
-	 * @param matricula Matrícula del vehículo.
+	 * @param matri Matrícula del vehículo.
 	 * @param modelo    Modelo del vehículo.
 	 * @param eslora    Eslora del vehículo acuático.
 	 */
-	public Acuaticos(String matricula, String modelo, int eslora) {
-		super(matricula, modelo);
+	public Acuaticos(String matri, String modelo, int eslora) {
+		super(matri, modelo);
 		this.eslora = eslora;
 	}
 
@@ -34,7 +34,8 @@ public class Acuaticos extends Vehiculos {
 	 */
 	@Override
 	protected void imprimir() {
-		System.out.print("   Eslora: " + this.eslora + "m.");
+		super.imprimir();
+		System.out.print("   Eslora: " + this.eslora + "metros.");
 	}
 
 	/**
