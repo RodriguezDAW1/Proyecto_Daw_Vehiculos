@@ -47,7 +47,7 @@ public class Acuaticos extends Vehiculos {
 	 */
 	@Override
 	public boolean comprobarMatricula() {
-		// Transforma la matr�cula a may�sculas.
+		// Transforma la matrícula a mayúsculas.
 		String matricula = this.getMatricula();
 		return matricula.matches("^[A-Z]{310}$");
 	}
