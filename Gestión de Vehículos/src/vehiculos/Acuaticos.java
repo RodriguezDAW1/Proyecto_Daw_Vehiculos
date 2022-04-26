@@ -9,12 +9,12 @@ public class Acuaticos extends Vehiculos {
     
     /**
      * Constructor.
-     * @param matri Matricula del vehículo.
+     * @param matricula Matricula del vehículo.
      * @param modelo Modelo del vehículo.
      * @param eslora Eslora del vehículo acuático.
      */
-    public Acuaticos(String matri, String modelo, int eslora){
-        super(matri,modelo);
+    public Acuaticos(String matricula, String modelo, int eslora){
+        super(matricula,modelo);
         this.eslora=0;
     }
 
