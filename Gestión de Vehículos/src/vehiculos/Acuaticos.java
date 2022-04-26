@@ -20,7 +20,6 @@ public class Acuaticos extends Vehiculos {
 
      
     /**
-     * Método que imprime un vehiculo acuático.
      * Método que devuelve la eslora del vehículo acuatico.
      * @return La eslora del vehiculo acuatico.
      */
