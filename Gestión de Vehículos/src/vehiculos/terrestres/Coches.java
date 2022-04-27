@@ -13,11 +13,11 @@ public class Coches extends Terrestres {
      * Método constructor.
      * @param matricula Matrícula del vehículo.
      * @param modelo Modelo del vehículo.
-     * @param numeroRuedas Número de ruedas del vehículo terrestre.
+     * @param nRuedas Número de ruedas del vehículo terrestre.
      * @param aireAcondicionado ¿Tiene aire acondicionado el coche?
      */
-    public Coches(String matricula, String modelo, int numeroRuedas, boolean aireAcondicionado){
-        super(matricula,modelo,numeroRuedas);
+    public Coches(String matricula, String modelo, int nRuedas, boolean aireAcondicionado){
+        super(matricula,modelo,nRuedas);
         this.aireAcondicionado=aireAcondicionado;
     }
 
